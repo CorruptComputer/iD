@@ -37,6 +37,7 @@
     "start": "run-s build:js start:server",
     "start:watch": "run-p build:js:watch start:server",
     "start:server": "node scripts/server.js",
+    "start:electron": "electron ./scripts/electron.js",
     "test": "npm-run-all -s lint build test:spec",
     "test:spec": "karma start karma.conf.js",
     "translations": "node scripts/update_locales.js"
@@ -83,6 +84,7 @@
     "concat-files": "^0.1.1",
     "d3": "~7.6.1",
     "editor-layer-index": "github:osmlab/editor-layer-index#gh-pages",
+    "electron": "^19.0.9",
     "esbuild": "^0.14.17",
     "esbuild-visualizer": "^0.3.1",
     "eslint": "^8.8.0",
